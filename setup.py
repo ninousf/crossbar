@@ -37,7 +37,8 @@ with open('requirements-dev.txt') as f:
         extras_require['dev'].append(line.strip())
 
 # with open('requirements-min.txt') as f:
-with open('requirements-latest.txt') as f:
+#with open('requirements-latest.txt') as f:
+with open('requirements-pinned.txt') as f:
     for line in f.read().splitlines():
         line = line.strip()
         if not line.startswith('#'):
